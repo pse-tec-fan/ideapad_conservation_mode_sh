@@ -26,8 +26,8 @@ echo "%sudo ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_a
 echo "'ideapad' file created in dir /etc/sudoers.d/"
 ls /etc/sudoers.d/
 echo
-sudo touch /etc/modules-load.d/ideapad_laptop
-echo "'ideapad_laptop' file created in dir /etc/modules-load.d/"
+echo "ideapad_laptop" | sudo tee /etc/modules-load.d/ideapad_laptop.conf
+echo "'ideapad_laptop.conf' file created in dir /etc/modules-load.d/"
 ls /etc/modules-load.d/
 #echo "ideapad_laptop" | sudo tee -a /etc/modules
 #cat /etc/modules
