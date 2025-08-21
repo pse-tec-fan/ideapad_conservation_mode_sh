@@ -31,7 +31,7 @@ echo
 #ls /etc/modules-load.d/
 #echo "ideapad_laptop" | sudo tee -a /etc/modules
 #cat /etc/modules
-echo
+#echo
 echo "Setup done"
 
 exit 0
